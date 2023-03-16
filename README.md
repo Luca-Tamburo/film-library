@@ -1,6 +1,4 @@
-# BigLab 2 - Class: 2022 AW1
-
-## Team name: BYTECODERS
+#### This project has been developed by team described below for the course of "Applicazioni Web I", attended during the academic year 2021/22 at Politecnico di Torino, Master's Degree in Computer Engineering.
 
 Team members:
 
@@ -64,7 +62,7 @@ Performs user authentication and create a new session for the user.
 
 A JSON object containing username and password.
 
-```
+```json
 {
     "username": "testuser@polito.it",
     "password": "password"
@@ -75,7 +73,7 @@ A JSON object containing username and password.
 
 `HTTP status code 200 OK`
 
-```
+```json
 {
     "id": "3",
     "email": "testuser@polito.it",
@@ -117,7 +115,7 @@ Gets information about the user, if he is logged in.
 
 `HTTP status code 200 OK`
 
-```
+```json
 {
     "id": "3",
     "email": "testuser@polito.it",
@@ -143,7 +141,7 @@ Gets all films associated with the logged in user.
 
 `HTTP status code 200 OK`
 
-```
+```json
 [
     {
         "id": "1",
@@ -188,7 +186,7 @@ Gets all favorite films associated with the logged in user.
 
 `HTTP status code 200 OK`
 
-```
+```json
 [
     {
         "id": "7",
@@ -234,7 +232,7 @@ Gets all best rated films associated with the logged in user.
 
 `HTTP status code 200 OK`
 
-```
+```json
 [
       {
         "id": "1",
@@ -269,7 +267,7 @@ Gets all films seen last month by the logged in user.
 
 `HTTP status code 200 OK`
 
-```
+```json
 [
       {
         "id": "3",
@@ -300,7 +298,7 @@ Gets all films unseen by the logged in user.
 
 `HTTP status code 200 OK`
 
-```
+```json
 [
     {
         "id": "4",
@@ -336,7 +334,7 @@ Returns a film associated with the logged in user, given the film id.
 
 `HTTP status code 200 OK`
 
-```
+```json
 {
     "id": "1",
     "title": "Pulp Fiction",
@@ -370,7 +368,7 @@ _Just the title and a rating from 0 to 5 are not optional._
 
 A JSON object containing the data of the film to insert.
 
-```
+```json
 {
     "title": "New film to insert",
     "plot": "Plot of the film...",
@@ -425,7 +423,7 @@ Sets or unsets the favorite status for a film asoociated with the logged in user
 
 A JSON object containing the new status for the favorite flag.
 
-```
+```json
 {
     "favorite": "1"
 }
@@ -455,7 +453,7 @@ Changes the rating of a film associated with the logged in user, given the film 
 
 A JSON object containing the new rating for the film.
 
-```
+```json
 {
     "rating": "4"
 }
